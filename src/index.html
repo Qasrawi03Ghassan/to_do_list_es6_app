@@ -3,47 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>To do list app | G.Q</title>
+
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <script src="/src/scripts/index.js" defer></script>
   </head>
+
   <body>
     <header>
-      <h1>To do list app</h1>
+      <div class="header-content">
+        <span class="logo">✓</span>
+
+        <div>
+          <h1>To do list application</h1>
+        </div>
+      </div>
     </header>
+
     <main>
       <section id="inputSec">
-        <label>
-          <input
-            id="elemField"
-            type="text"
-            title="Elements input"
-            placeholder="Enter a new element/item here"
-          />
-        </label>
-        <button type="button">Add element</button>
+        <div class="input-wrapper">
+          <span class="input-icon">＋</span>
+
+          <label>
+            <input
+              id="elemField"
+              type="text"
+              title="Elements input"
+              placeholder="What needs to be done?"
+              autocomplete="off"
+            />
+          </label>
+        </div>
+
+        <button id="addBtn" type="button">
+          <span>+</span>
+          Add task
+        </button>
       </section>
+
       <section id="outputSec">
-        <h2>Available duties for tody:</h2>
+        <div class="section-header">
+          <div>
+            <h2>Today's tasks</h2>
+            <p id="taskCount">0 tasks remaining</p>
+          </div>
+
+          <button id="clearCompleted" type="button" class="clear-btn">
+            Clear completed
+          </button>
+        </div>
+
         <div id="duties">
-          <ul>
-            <li>
-              <p>Duty 1</p>
-              <button type="button">Mark as done</button>
-              <button type="button">Remove</button>
-            </li>
-            <li>
-              <p>Duty 2</p>
-              <button type="button">Mark as done</button>
-              <button type="button">Remove</button>
-            </li>
-            <li>
-              <p>Duty 3</p>
-              <button type="button">Mark as done</button>
-              <button type="button">Remove</button>
-            </li>
-          </ul>
+          <ul></ul>
         </div>
       </section>
     </main>
+
     <footer>
       <p>Created by Ghassan Qasrawi @ AlAhd Technology Solutions company</p>
     </footer>
