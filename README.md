@@ -9,3 +9,6 @@
 7. Practice — destructuring exercises: Destructure values from 3 different objects and 2 arrays in console exercises.
 8. Practice — spread/rest exercises: Merge two arrays using spread; write a function that accepts unlimited arguments using rest (`...args`).
 9. Push progress: `git commit -m " destructuring, spread, rest"`, `git push`.
+10. Read — JavaScript modules: Read MDN: "JavaScript modules" (JavaScript modules - JavaScript | MDN ).
+11. Split your To-Do app into modules: Move task-related functions into a separate `tasks.js` file, `export` them, and `import` into `script.js`.
+12. Push progress: `git commit -m "JS modules"`, `git push`.
