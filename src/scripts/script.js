@@ -166,3 +166,37 @@ let sum = (...args) => {
   return s;
 };
 console.log(sum(100, 200, 300, 400));
+
+//===================================
+
+let delayedTask = (delay) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(
+        `Task done by promise after ${delay >= 1000 ? delay / 1000 + "s" : delay + "ms"}`,
+      );
+    }, delay);
+  });
+};
+
+let delaydTaskAsync = async (delay) => {
+  setTimeout(() => {
+    alert(
+      `Task done by async/ await after ${delay >= 1000 ? delay / 1000 + "s" : delay + "ms"}`,
+    );
+  }, delay);
+};
+
+const promiseBtn = document.getElementById("promiseBtn");
+
+promiseBtn.addEventListener("click", async () => {
+  delayedTask(300)
+    .then((message) => {
+      alert(message);
+    })
+    .catch(() => {
+      alert("Error in task by promise");
+    });
+
+  await delaydTaskAsync(3000);
+});
