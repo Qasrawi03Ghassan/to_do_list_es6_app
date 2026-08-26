@@ -12,3 +12,8 @@
 10. Read — JavaScript modules: Read MDN: "JavaScript modules" (JavaScript modules - JavaScript | MDN ).
 11. Split your To-Do app into modules: Move task-related functions into a separate `tasks.js` file, `export` them, and `import` into `script.js`.
 12. Push progress: `git commit -m "JS modules"`, `git push`.
+13. Read — Asynchronous JavaScript: Read MDN: "Introducing asynchronous JavaScript" (Asynchronous JavaScript - Learn web development | MDN ).
+14. Read — Promises deep dive: Read The Modern JavaScript Tutorial : "Promise" (https://javascript.info/promise-basics).
+15. Read — async/await: Read The Modern JavaScript Tutorial : "Async/await" (https://javascript.info/async-await).
+16. Practice — write a Promise: Write a function that returns a Promise simulating a delayed task (`setTimeout` + `resolve`)(done with both `promises` and `async/await`).
+17. Push progress: `git commit -m " promises and async/await"`, `git push`.
